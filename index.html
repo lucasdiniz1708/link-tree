@@ -21,6 +21,7 @@ body {
 .container {
   padding: 15px;
   margin: 0 auto;
+  max-width: 1200px; /* Defina a largura máxima da área de conteúdo */
 }
 
 .name {
@@ -36,21 +37,22 @@ body {
 }
 
 a {
-  font-size: 1rem; /* Ajuste conforme necessário */
+  font-size: 1rem;
 }
 
 .links-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%; /* Garanta que a largura da div seja 100% */
 }
 
 .links-container a {
-  width: 80%;
+  width: 100%;
 }
 
 .profession {
-  font-size: 0.875rem; /* Ajuste conforme necessário */
+  font-size: 0.875rem;
 }
 
 .icons {
@@ -69,11 +71,29 @@ a {
 
 @media screen and (min-width: 576px) {
   .container {
-    max-width: 540px;
+    padding: 15px 30px; /* Adicione mais espaço ao redor do conteúdo */
+  }
+
+  .links-container a {
+    width: 80%; /* Reduza a largura dos links */
   }
 
   .profession {
-    font-size: 1.5rem; /* Ajuste conforme necessário */
+    font-size: 1rem; /* Ajuste o tamanho da fonte */
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 15px 60px; /* Adicione mais espaço ao redor do conteúdo */
+  }
+
+  .links-container a {
+    width: 60%; /* Reduza a largura dos links */
+  }
+
+  .profession {
+    font-size: 1.25rem; /* Ajuste o tamanho da fonte */
   }
 }
 </style>
@@ -94,7 +114,7 @@ a {
   <div class="links-container">
     <a href="https://www.instagram.com/projetosoldadoferido/?igsh=bGgxb2E4dXk1NW80" class="w3-button w3-round w3-theme-d3 w3-border link" target="_blank">PROJETO SOLDADO FERIDO</a>
     <br>
-    <a href="https://api.whatsapp.com/send?phone=5531993631810" class="w3-button w3-round w3-theme-d3 w3-border link" target="_blank">CONTATO - WHATSAPP </a>
+    <a href="https://api.whatsapp.com/send?phone=5531993631810" class="w3-button w3-round w3-theme-d3 w3-border link" target="_blank">CONTATO - WHATsAPP </a>
     <br>
     <a href="https://api.whatsapp.com/send?phone=5531971347090" class="w3-button w3-round w3-theme-d3 w3-border link" target="_blank">PSICOTERAPIAS E AULAS</a><br>
     <br>
